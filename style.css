@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+:root {
+  --White: #ffffff;
+  --Stone100: #f3e5d8;
+  --Stone150: #e4ded8;
+  --Stone600: #625c57;
+  --Stone900: #2a2725;
+  --Brown800: #854632;
+  --Rose800: #863a4b;
+  --Rose50: #fff0f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Stone150);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+main {
+  background-color: var(--White);
+  border-radius: 17px;
+  padding: 45px;
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#header h1 {
+  color: var(--Stone900);
+  margin-top: 20px;
+  font-size: 35px;
+  font-family: "Young Serif", serif;
+}
+
+#header p {
+  color: var(--Stone600);
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+#preparationtime h3 {
+  color: var(--Rose800);
+  margin-top: 25px;
+  font-size: 20px;
+  padding-left: 10px;
+  font-family: "Young Serif", serif;
+}
+
+#preparationtime ul {
+  color: var(--Stone600);
+  margin-top: 5px;
+  padding-left: 30px;
+  font-size: 17px;
+}
+
+#ingredients h2,
+#instructions h2,
+#nutrition h2 {
+  color: var(--Brown800);
+  font-size: 30px;
+  margin-top: 25px;
+  font-family: "Young Serif", serif;
+}
+
+#ingredients ul {
+  color: var(--Stone600);
+  padding-left: 25px;
+  font-size: 17px;
+}
+
+#ingredients ul li {
+  margin-bottom: 10px;
+}
+
+#instructions ol {
+  color: var(--Stone600);
+  margin-top: 20px;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+#instructions ol li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+#instructions ol li::marker {
+  color: var(--Brown800);
+  font-weight: bold;
+}
+
+#nutrition h3 {
+  color: var(--Stone600);
+  margin-top: 10px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.nutrition-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.nutrition-row p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.nutrition-row p:first-child {
+  width: 250px;
+}
+
+#calories,
+#carbs,
+#protein,
+#fat {
+  color: var(--Stone600);
+  font-size: 14px;
+}
+
+#kcal,
+#gone,
+#gtwo,
+#gthree {
+  color: var(--Brown800);
+  font-weight: bold;
+}
+
+span {
+  font-weight: bold;
+}
+
+#end {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+#end a {
+  color: hsl(228, 80%, 50%);
+}
+
+#end a:hover {
+  color: hsl(0, 80%, 50%);
+}
+
+hr {
+  opacity: 0.5;
+  margin: 8px 0;
+}
+
+@media (max-width: 375px) {
+  main {
+    padding: 20px;
+  }
+
+  #header h1 {
+    font-size: 28px;
+  }
+
+  #ingredients h2,
+  #instructions h2,
+  #nutrition h2 {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    padding: 50px;
+  }
+
+  #header h1 {
+    font-size: 38px;
+  }
+
+  #ingredients h2,
+  #instructions h2,
+  #nutrition h2 {
+    font-size: 34px;
+  }
+}
